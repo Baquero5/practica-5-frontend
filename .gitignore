@@ -1,30 +1,142 @@
-# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+# Dependencias
+node_modules/
+/.pnp
+.pnp.js
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Testing
+/coverage
+
+# Production
+/build
+/dist
+
 # Variables de entorno
 .env
 .env.local
 .env.development
-.env.test
-.env.production
-.env.*.local
-
-# dependencies
-/node_modules
-/.pnp
-.pnp.js
-
-# testing
-/coverage
-
-# production
-/build
-
-# misc
-.DS_Store
-.env.local
 .env.development.local
+.env.test
 .env.test.local
+.env.production
 .env.production.local
 
+# Logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+*.log
+
+# Archivos de sistema operativo
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.swp
+*.swo
+*~
+
+# IDEs y editores
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.code-workspace
+.project
+.settings/
+.classpath
+*.swp
+*.swo
+*.swn
+*.bak
+*.tmp
+
+# Create React App específicos
+.eslintcache
+
+# Vercel
+.vercel
+.now
+
+# Next.js (si migras en el futuro)
+.next/
+out/
+
+# Gatsby (si migras en el futuro)
+.cache/
+public/
+
+# Editor files
+*.sublime-workspace
+*.sublime-project
+.history/
+.idea/
+
+# Misc
+*.pem
+*.key
+*.crt
+*.cert
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+debug.log
+
+# Local env files
+.env*.local
+
+# TypeScript (si usas TS en el futuro)
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn Integrity file
+.yarn-integrity
+
+# Temporary folders
+tmp/
+temp/
+
+# Storybook
+storybook-static/
+
+# Cypress
+cypress/videos/
+cypress/screenshots/
+
+# PWA files
+**/public/sw.js
+**/public/workbox-*.js
+**/public/worker-*.js
+**/public/sw.js.map
+**/public/workbox-*.js.map
+**/public/worker-*.js.map
